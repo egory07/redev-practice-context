@@ -23,7 +23,7 @@ const App = () => {
 
   const changeElem = (e) => {
     e.preventDefault();
-    let newNames = names.concat().map((obj) => {
+    const newNames = names.map((obj) => {
       return {
         ...obj,
         body: obj.body + "!!!",
